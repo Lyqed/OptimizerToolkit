@@ -1,0 +1,6 @@
+echo "alias autoalias='$(pwd)/autoalias.sh'" >> ~/.bashrc && source ~/.bashrc
+echo "alias autoalias='$(pwd)/autoalias.sh'" >> ~/.zshrc && source ~/.zshrc
+
+
+echo "alias autoalias='$(pwd)/autoalias.sh'" | sudo tee -a /etc/bash.bashrc > /dev/null && source /etc/bash.bashrc
+echo "alias autoalias='$(pwd)/autoalias.sh'" | sudo tee -a /etc/zsh/zshenv > /dev/null && source /etc/zsh/zshenv
